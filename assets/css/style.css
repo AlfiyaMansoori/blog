@@ -1,0 +1,170 @@
+*{
+ margin:0;
+ border:0;
+ box-sizing: border-box;
+}
+
+
+/*top head section start*/
+.top-head{
+    background: rgb(85, 48, 0);
+    padding: 5px 125px;
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-head p{
+    display: inline;
+}
+.top-head  a{
+    color:rgb(197, 182, 161);
+    display: inline;
+}
+/*top head section end*/
+
+
+
+/*header section start*/
+header{
+    background: rgb(189, 133, 59);
+    padding:5px 125px;
+    height:100px;
+    width:100%;
+    line-height: 90px;
+}
+header h1,header h4{
+    color:rgb(81, 76, 71);
+     display: inline;
+   
+}
+/*header section end*/
+
+
+/*nav section start*/
+
+nav{
+    background: rgb(210, 185, 151);
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+    margin-right:20px;
+    padding:5px 70px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color:rgb(54, 33, 6);
+    font-weight: 800;
+}
+
+/*nav section end*/
+
+/*main section end*/
+.main
+{
+    padding:0px 125px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.main article{
+     padding:10px 0px;
+}
+.main article a{
+     text-decoration: none;
+     color:rgb(20, 188, 129);
+}
+.main article p{
+    text-align: justify;
+    margin:  5px 10px;
+}
+aside
+{
+    background: rgb(132, 121, 106);
+    padding :15px 100px 50px 15px;
+    height: 400px;
+}
+aside ul li{
+    list-style:none;
+    padding-left:20px;
+}
+footer{
+    width:100%;
+    height: 100px;;
+    color:rgb(4, 32, 32);
+    padding: 10px 125px;
+     background: rgb(146, 131, 110);
+}
+Footer .first
+{
+     float:left;
+     margin-right:100px
+
+}
+Footer .second
+{
+     float:left;
+
+}
+Footer .third
+{
+     float:right;
+
+}
+
+/*Media queries start*/
+@media screen and(max-width:991px)
+{
+    .top-head,footer{
+        height:auto;
+        padding:10px;
+
+    }
+    .top-head ul li {
+        display:block;
+
+    }
+    header,nav
+    {
+        text-align:center;
+        padding:0px 10px;
+
+    }
+    main{
+        padding:0px 0px 0px 10px;
+
+
+    }
+}
+
+@media screen and(max-width:767px)
+{
+     main article,main aside
+     {
+        float:none;
+        width:100px;
+        padding:0px;
+     }
+     footer .first,footer.second,footer .third{
+        float:none;
+        width :100px;
+     }
+}
+@media screen and(max-width:575px)
+{
+    header
+    {
+        line-height: normal;
+    }
+    header h1,header h4
+    {
+        display:block;
+
+    }
+}
+/*Media queries start*/
+
+
